@@ -13,9 +13,9 @@ on a live EC2 instance provisioned entirely through the AWS CLI.
 ## Architecture
 
 User (Browser)
-↓
+-->
 EC2 Instance (Flask Server) — inside custom VPC
-↓
+-->
 Anthropic Claude API
 
 - **VPC** with a public subnet, internet gateway, and custom route table
