@@ -1,0 +1,78 @@
+Starting infrastructure setup...
+Created VPC: vpc-071cf37e216a0e585
+DNS hostnames enabled
+Created Subnet: subnet-087f8da97a087ee68
+Public IP on launch enabled
+Created IGW: igw-0ecca3963eddf8f74
+IGW attached to VPC
+Created Route Table: rtb-0f9f6142fba62e2fd
+{
+    "AssociationId": "rtbassoc-0a56e7e2377188a56",
+    "AssociationState": {
+        "State": "associated"
+    }
+}
+Route table associated with subnet
+{
+    "Return": true
+}
+Route to IGW created
+Created Security Group: sg-086fd72ee8e5b39bd
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-005671210a238bbfc",
+            "GroupId": "sg-086fd72ee8e5b39bd",
+            "GroupOwnerId": "891612540541",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "CidrIpv4": "50.123.94.194/32",
+            "SecurityGroupRuleArn": "arn:aws:ec2:us-east-1:891612540541:security-group-rule/sgr-005671210a238bbfc"
+        }
+    ]
+}
+SSH access allowed for 50.123.94.194
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-006b2e67063544769",
+            "GroupId": "sg-086fd72ee8e5b39bd",
+            "GroupOwnerId": "891612540541",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 5000,
+            "ToPort": 5000,
+            "CidrIpv4": "0.0.0.0/0",
+            "SecurityGroupRuleArn": "arn:aws:ec2:us-east-1:891612540541:security-group-rule/sgr-006b2e67063544769"
+        }
+    ]
+}
+Flask port 5000 open
+Key pair saved as CloudAssistantKey.pem
+Using AMI: ami-05e86b3611c60b0b4
+Launched EC2 instance: i-0c879d04e6c3e64a6
+Waiting for instance to be running...
+Instance is running
+================================================
+Setup complete!
+Public IP: 54.80.159.164
+SSH: ssh -i CloudAssistantKey.pem ubuntu@54.80.159.164
+================================================
+]633;D;0]633;P;Cwd=C:/Users/fadya/cloud-support-assistant[?2004h]633;A(myenv) ]633;A]0;MINGW64:/c/Users/fadya/cloud-support-assistant
+[32mfadya@Fetty [35mMINGW64 [33m~/cloud-support-assistant[36m (main)[0m
+$ ]633;B]633;Baws
+[?2004l]633;E;aws;c7edca1b-7de8-4cf5-bf80-35bac5b683fb]633;C
+aws: [ERROR]: the following arguments are required: command
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+ERROR: Script failed at line 4 — check setup.log
